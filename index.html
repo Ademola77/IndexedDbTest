@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2 style="text-align: center;color:darkcyan">FRIENDSHIP CENTRE<hr> </h2>
+    </div>
+
+    <section style="background-color: rgb(172, 174, 189);width: 40%;">
+        <h3 style="color:brown;text-align: center;">INPUT SECTION</h3>
+        <div>
+            <button style="background-color: brown;color: white;" id="clearBtn">Clear</button>
+        </div>
+        <form action="">
+            <hr>
+            <div >
+                <label id="fid" style="display: none;">xx</label>
+            </div>
+            <div style="padding-bottom:5px;margin-left: 25px;">
+                <label for="fname" style="color: white;">Friend Name:</label>
+                <input type="text" id="fname" required placeholder="Name of your friend." style="margin-left:60px;" >
+            </div>
+            <hr>
+            <div style="padding-bottom:5px;margin-left: 25px;">
+                <label for="fscore" style="color: white;">Friendship Score (%):</label>
+                <input type="number" id="fscore" required placeholder="Range between 0 - 100"  max="100" style="margin-left:10px;" >
+            </div> 
+            <hr>  
+            <div style="padding-bottom:5px;margin-left: 25px;">
+                <label for="fgender" style="color: white;">Gender:</label>
+                <select id="fgender" required style="margin-left:100px;" >
+                    <option value=""> --Select gender-- </option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>       
+            <div style="padding-bottom:5px;margin-left: 25px;">
+                <label for="ftribe" style="color: white;">Tribe:</label>
+                <select id="ftribe" required style="margin-left:115px;">
+                    <option value=""> --Pick the tribe of friend -- </option>
+                    <option value="Igbo">Igbo</option>
+                    <option value="Fulani">Fulani</option>
+                    <option value="Hausa">Hausa</option>
+                    <option value="Yoruba">Yoruba</option>
+                </select>
+            </div>
+            <hr>
+            <div style="padding-bottom:5px;margin-left: 25px;">
+                <label for="factive" style="color: white;">Are you still in-touch?:</label>
+                <input type="checkbox" id="factive"  style="margin-left:0px;">
+            </div>
+            <input id="regBtn" type="submit" value="Register" style="margin-left:180px;margin-bottom:10px;">
+        </form>
+        <hr>
+        <div style="text-align: center;color: brown;">
+            <button id="viewByCursorBtn" style="color: brown;" >View By Cursor</button> | <button id="viewBtn" style="color: brown;" >ViewB</button> | <button id="updateBtn" style="color: brown;">Update</button> | <button id="deleteBtn" style="color: brown;">Delete</button> | <button id="deleteDbBtn" style="color: brown;">Delete Database</button> 
+        </div>
+        <hr  style="margin-bottom: 75px;">
+    </section>
+
+
+<div>
+
+
+<hr>
+        <div style="background-color: rgb(240, 247, 179);width: 60%;">
+           
+            <div>
+                <ul id="ulview">
+                    
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div style="background-color: rgb(184, 179, 247);width: 60%;">
+            <table >
+                <thead>
+                    <tr>
+                        <th style="padding-right:25px;">No.</th>
+                        <th style="padding-right:25px;">NAME</th>
+                        <th style="padding-right:25px;">SCORE</th>
+                        <th style="padding-right:25px;">GENDER</th>
+                        <th style="padding-right:25px;">TRIBE</th>
+                        <th style="padding-right:25px;">ISACTIVE?</th>
+                        <th style="padding-right:25px;">SELECT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+               
+        </div>
+
+</div>
+
+    <script src="index.js"></script>
+</body>
+</html>
